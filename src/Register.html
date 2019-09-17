@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/custom-bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Pezy</title>
+    <style type="text/css">
+        #navcolor{
+            background-color: #ff6d00;
+          }
+          #navlink a:link { 
+              color: #FFFFFF;
+          }
+          #navlink a:visited { 
+              color: #FFFFFF;
+          }
+          .navbar-default .navbar-brand {
+              color: #FFFFFF;
+          }
+          #navBarSearchForm input[type=text]{
+              width:460px !important;
+          }
+          </style>
+</head>
+<body>
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1" id="navcolor">
+        <a class="navbar-brand" href="#">              
+            <img src="assets/img/Logo.png" alt="logo" style="width:112.3px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+          aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <form class="form-inline mr-auto" id="navBarSearchForm">
+                  <input class="form-control" type="text" placeholder="คันหาสินค้า/ร้านค้า" aria-label="Search">
+                </form>
+                <span class="sr-only">(current)</span>
+              </a>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <a class="nav-link" href="#"><img src="assets/img/Cart.png" alt="logo" style="width:60px;"></a>
+              </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                      <a class="nav-link" href="#"><img src="assets/img/Icon Chat.png" alt="logo" style="width:60px;"></a>
+                    </a>
+                  </li>
+            <li class="nav-item avatar dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0"
+                alt="avatar image" style="width: 70px">
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                aria-labelledby="navbarDropdownMenuLink-55">
+                <a class="dropdown-item" href="#">ข้อมูลผู้ใช้</a>
+                <a class="dropdown-item" href="#">ประวัติการสั่งซื้อ</a>
+                <a class="dropdown-item" href="index.html">ออกจากระบบ</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/custom-bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Pezy</title>
+    <style type="text/css">
+        #navcolor {
+            background-color: #ff6d00;
+        }
+
+        #navlink a:link {
+            color: #FFFFFF;
+        }
+
+        #navlink a:visited {
+            color: #FFFFFF;
+        }
+
+        .navbar-default .navbar-brand {
+            color: #FFFFFF;
+        }
+
+        .form-elegant .font-small {
+            font-size: 0.8rem;
+        }
+
+        .form-elegant .z-depth-1a {
+            -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+            box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+        }
+
+        .form-elegant .z-depth-1-half,
+        .form-elegant .btn:hover {
+            -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+            box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+        }
+
+        .form-elegant .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-dialog .form-elegant .btn .fab {
+            color: #ff6d00 !important;
+        }
+
+        .form-elegant .modal-body,
+        .form-elegant .modal-footer {
+            font-weight: 400;
+        }
+
+        .btn-login {
+            width: 207.1px;
+            height: 56.1px;
+            object-fit: contain;
+        }
+
+        .icon-chat {
+            width: 65px;
+            /* height: 100px; */
+            object-fit: contain;
+        }
+
+        .highlight {
+            color: #ffcf17;
+        }
+
+        .form-elegant {
+            background-image: linear-gradient(134deg, #ffa101, #ff9200 7%, #ff8100 17%, #ff7500 30%, #ff6e00 49%, #ff6d00);;
+        }
+
+        .body {
+            background-color: rgba(245, 245, 245, 0.5);
+        }
+
+        .Path-54 {
+            width: 1598.8px;
+            height: 51.7px;
+            background-color: #ffffff;
+        }
+
+        .Rectangle-166 {
+        width: 1920px;
+        height: 30px;
+        object-fit: contain;
+        background-image: linear-gradient(to top, #ffa101, #ff9200 7%, #ff8100 17%, #ff7500 30%, #ff6e00 49%, #ff6d00);
+        }
+    </style>
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-dark blue lighten-2 mb-4" id="navcolor">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/Logo.png" alt="logo" style="width:112.3px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav" id="navcolor">
+            <li class="nav-item">
+                <form class="form-inline mr-auto">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search"
+                        style="width: 500px">
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="assets/img/Cart.png" alt="logo" style="width:50px;"></a>
+            </li>
+            <li class="nav navbar-nav navbar-right">
+                <a href="#" class="m-4 text-nav" data-toggle="modal" data-target="#modalRegister">สมัครสมาชิก</a>
+            </li>
+            <!-- <li>
+                <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalRegister">
+                    <img src="assets/img/user.png" class="btn-login" alt="Register">
+                </a>
+            </li> -->
+            <li class="nav navbar-right">
+                <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">
+                    <img src="assets/img/user.png" class="btn-login" alt="Login">
+                </a>
+            </li>
+        </ul>
+
+        <!-- <ul class="nav navbar-nav navbar-right" id="navlink">
+            <li><a href="" class="btn btn-default btn-rounded">
+                    <img src="assets/img/Icon Chat.png" alt="Chat" class="icon-chat">
+                </a></li>
+        </ul> -->
+    </nav>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <form action="./Login.html" method="get">
+                <div class="modal-content form-elegant bg-linear-ingradient">
+                    <!--Header-->
+                    <div class="modal-header text-center">
+                        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+                            <strong>Login</strong></h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body mx-4">
+                        <!--Body-->
+                        <div class="md-form mb-2">
+                            <label data-error="wrong" data-success="right" for="Form-email1">email</label>
+                            <input type="email" id="Form-email1" class="form-control validate">
+                        </div>
+
+                        <div class="md-form pb-3">
+                            <label data-error="wrong" data-success="right" for="Form-pass1">password</label>
+                            <input type="password" id="Form-pass1" class="form-control validate">
+                            <p class="font-small blue-text d-flex justify-content-end">ลืม <a href="#"
+                                    class="blue-text ml-1">
+                                    รหัสผ่าน?</a></p>
+                        </div>
+
+                        <div class="row my-3 d-flex justify-content-center">
+                            <input type="submit" class="button-highlight btn blue-gradient btn-block btn-rounded z-depth-1a"
+                                value="เข้าสู่ระบบ" />
+                        </div>
+                        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> หรือ
+                        </p>
+                        <div class="row my-3 d-flex justify-content-center">
+                            <!--Facebook-->
+                            <button type="button"
+                                class="button-white btn blue-gradient btn-block btn-rounded z-depth-1a">facebook</button>
+                        </div>
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer mx-5 pt-3 mb-1">
+                        <p class="font-small grey-text d-flex justify-content-end">ยังไม่เป็นสมาชิกใช่ไหม? <a href="#"
+                                class="blue-text ml-1">
+                                สมัครสมาชิก</a></p>
+                    </div>
+                </div>
+            </form>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal Login -->
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant bg-linear-ingradient">
+                <!--Header-->
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+                        <strong>Register</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <form action="Register.html" method="get">
+                    <div class="modal-body mx-4">
+                        <!--Body-->
+                        <div class="md-form mb-3">
+                            <label data-error="wrong" data-success="right" for="Form-email1">ชื่อ - นามสกุล</label>
+                            <input type="text" id="Form-email1" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-3">
+                            <label data-error="wrong" data-success="right" for="Form-email1">เบอร์โทรศัพท์</label>
+                            <input type="text" id="Form-email1" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-3">
+                            <label data-error="wrong" data-success="right" for="Form-email1">Email</label>
+                            <input type="email" id="Form-email1" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-3">
+                            <label data-error="wrong" data-success="right" for="Form-email1">ชื่อผู้ใช้</label>
+                            <input type="text" id="Form-email1" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-3">
+                            <label data-error="wrong" data-success="right" for="Form-email1">รหัสผ่าน</label>
+                            <input type="password" id="Form-email1" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-3">
+                            <label data-error="wrong" data-success="right" for="Form-email1">ยืนยันรหัสผ่าน</label>
+                            <input type="password" id="Form-email1" class="form-control validate">
+                        </div>
+    
+                        <div class="mb-2 p-2">
+                            <div class="text-center">
+                                ในการสมัครใช้งาน เราถือว่าคุณยอมรับ<span class="highlight">นโยบาย</span>และ<span
+                                    class="highlight">นโยบายความเป็นส่วนตัว</span>กับทาง PEZY ขอสงวนสิทธิ์ห้ามมิให้ฝ่าฝืน
+                                PEZY มีสิทธิ์ระงับสถานะบัญชีผู้ใช้และงดให้บริการทันที ให้ความเห็นของ PEZY เป็นที่สุด
+                            </div>
+                        </div>
+    
+                        <div class="mb-4 p-2">
+                            <div class="form-group form-check text-center">
+                                <input type="checkbox" class="form-check-input" id="chk-agree">
+                                <label class="form-check-label" for="chk-agree">ฉันยอมรับเงื่อนไขและนโยบายของ PEZY</label>
+                            </div>
+                        </div>
+    
+                        <div class="text-center mb-3">
+                            <input type="submit" class="button-highlight btn blue-gradient btn-block btn-rounded z-depth-1a"
+                                value="ลงทะเบียน" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal Register -->
+
+    <!--Body-->
+    <div class="container-fluid text-center">    
+            <div class="row content">
+              <div class="col-sm-1 sidenav">
+                <!-- <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p> -->
+              </div>
+              <div class="col-sm-10 text-left"> 
+                    <div class="row">
+                            <div class="col-sm-3 col-md-6 col-lg-12">
+                                <center>
+                                    <img src="assets/img/Banner.png" alt="logo" style="width:100%; height: 100%;">
+                                </center>
+                            </div>
+                            <div class="col-sm-3 col-md-6 col-lg-6">
+                                    <br>
+                                    <img src="assets/img/Banner2.png" alt="logo" style="width:100%; height: 100%;">
+                
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-lg-6">
+                                    <br>
+                                    <img src="assets/img/Banner3.png" alt="logo" style="width:100%; height: 100%;">
+                            </div>
+                            <br>
+                            <div class="col-sm-9 col-md-6 col-lg-12 Path-54">
+                                <br>
+                                Catagory/หมวดสินค้า
+                            </div>
+                            <div class="col-sm-3 col-md-6 col-lg-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-6 col-lg-12 align-content-lg-center" style="height:500px; background-color: #ffffff" href="#">
+                                        <center>
+                                            Coming Soon
+                                        </center>
+                                        </div>
+                                    </div>
+                            </div>
+                          </div>
+              </div>
+              <div class="col-sm-1 sidenav">
+                <!-- <div class="well">
+                  <p>ADS</p>
+                </div>
+                <div class="well">
+                  <p>ADS</p>
+                </div> -->
+              </div>
+            </div>
+        </div>
+          
+        <!-- <footer class="container-fluid text-center">
+            <p>Footer Text</p> -->
+            <!-- Footer -->
+<footer class="page-footer font-small indigo">
+<div class="row Rectangle-166">
+
+</div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold mt-3 mb-2 text-dark">ศูนย์ขอความช่วยเหลือ</h5>
+      
+              <ul class="list-unstyled text-muted">
+                <li>
+                  <a href="#!" class="text-muted">สั่งซื้อสินค้าอย่างไร</a>
+                </li>
+                <li>
+                 <a href="#!" class="text-muted">เริ่มขายสินค้าอย่างไร</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">อยากโฆษณาอย่างไร</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">ติดต่อ Pezy</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">เกี่ยวกับ Pezy</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-muted">เกี่ยวกับเรา</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">นโยบายของ Pezy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">นโบายความเป็นส่วนตัว</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ติดตาม Pezy</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-muted">Facebook</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-muted">Instagram</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ดาวโหลดแอปพลิเคชั่น</h5>
+            
+              <ul class="list-unstyled">
+            <div class="row">
+                <div class="col-lg-4">
+                <li>
+                  <a href="#!"><img src="assets/img/qr.png" alt="logo" style="width:70px"></a>
+                </li>
+                </div>
+                <div class="col-lg-4">
+                <li>
+                    <a href="#!"><img src="assets/img/ios.png" alt="logo" style="widows: 50px;"></a>
+                    <a href="#!"><img src="assets/img/android.png" alt="logo" style="widows: 5px;"></a>
+                </li>
+                </div>
+            </div>
+              </ul>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 ">© 2018 Copyright:
+          <a href="#" class="text-muted">Pezy.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+</body>
+</html>
